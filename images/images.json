@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop",
+    "alt": "Construction workers on site at sunset",
+    "credit": "Unsplash"
+  },
+  "about-team": {
+    "url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop",
+    "alt": "Construction team working together",
+    "credit": "Unsplash"
+  },
+  "service-kitchen": {
+    "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+    "alt": "Modern renovated kitchen with white cabinets",
+    "credit": "Unsplash"
+  },
+  "service-bathroom": {
+    "url": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop",
+    "alt": "Luxury modern bathroom",
+    "credit": "Unsplash"
+  },
+  "service-additions": {
+    "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+    "alt": "Modern home exterior with addition",
+    "credit": "Unsplash"
+  },
+  "service-commercial": {
+    "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+    "alt": "Modern commercial office space",
+    "credit": "Unsplash"
+  },
+  "service-whole-home": {
+    "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+    "alt": "Beautiful renovated home",
+    "credit": "Unsplash"
+  },
+  "service-new-construction": {
+    "url": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
+    "alt": "New construction modern home",
+    "credit": "Unsplash"
+  },
+  "portfolio-kitchen-1": {
+    "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop",
+    "alt": "Modern minimalist kitchen remodel"
+  },
+  "portfolio-bathroom-1": {
+    "url": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop",
+    "alt": "Luxury spa bathroom"
+  },
+  "portfolio-addition": {
+    "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+    "alt": "Home with second story addition"
+  },
+  "portfolio-commercial": {
+    "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop",
+    "alt": "Restaurant interior build-out"
+  },
+  "portfolio-kitchen-2": {
+    "url": "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&h=600&fit=crop",
+    "alt": "Industrial loft kitchen"
+  },
+  "portfolio-bathroom-2": {
+    "url": "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&h=600&fit=crop",
+    "alt": "Master bathroom overhaul"
+  }
+}

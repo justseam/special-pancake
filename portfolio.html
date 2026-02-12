@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Apex Construction's portfolio of completed projects — kitchens, bathrooms, additions, and commercial builds across New Jersey.">
+  <title>Portfolio | APEX Construction & Renovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+  <header class="navbar navbar--scrolled" id="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Apex Construction Home">
+        <svg class="navbar__logo-icon" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 38,38 2,38" fill="none" stroke="#FF6B35" stroke-width="3"/>
+          <line x1="20" y1="14" x2="20" y2="30" stroke="#FF6B35" stroke-width="3"/>
+          <line x1="12" y1="26" x2="28" y2="26" stroke="#FF6B35" stroke-width="2"/>
+        </svg>
+        <span class="navbar__logo-text">APEX</span>
+      </a>
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul class="navbar__list">
+          <li><a href="about.html" class="navbar__link">About</a></li>
+          <li class="navbar__dropdown">
+            <a href="services.html" class="navbar__link">Services</a>
+            <ul class="navbar__dropdown-menu">
+              <li><a href="service-kitchen.html">Kitchen Remodeling</a></li>
+              <li><a href="service-bathroom.html">Bathroom Renovation</a></li>
+              <li><a href="service-additions.html">Home Additions</a></li>
+              <li><a href="service-commercial.html">Commercial Construction</a></li>
+              <li><a href="service-whole-home.html">Whole-Home Renovation</a></li>
+              <li><a href="service-new-construction.html">New Construction</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html" class="navbar__link navbar__link--active">Portfolio</a></li>
+          <li><a href="testimonials.html" class="navbar__link">Testimonials</a></li>
+          <li><a href="contact.html" class="navbar__link">Contact</a></li>
+          <li><a href="request-bid.html" class="navbar__link navbar__link--cta">Request a Bid</a></li>
+        </ul>
+      </nav>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero__overlay"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span class="breadcrumb__current">Portfolio</span>
+          </nav>
+          <h1 class="page-hero__title">OUR <span class="text-accent">PORTFOLIO</span></h1>
+          <p class="page-hero__subtitle">See the transformations for yourself. Every project tells a story of vision meeting craftsmanship.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="portfolio__filters animate-on-scroll" data-animation="fade-in" role="tablist" aria-label="Filter projects by type">
+          <button class="portfolio__filter active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="portfolio__filter" data-filter="kitchen" role="tab" aria-selected="false">Kitchen</button>
+          <button class="portfolio__filter" data-filter="bathroom" role="tab" aria-selected="false">Bathroom</button>
+          <button class="portfolio__filter" data-filter="addition" role="tab" aria-selected="false">Additions</button>
+          <button class="portfolio__filter" data-filter="commercial" role="tab" aria-selected="false">Commercial</button>
+        </div>
+
+        <div class="portfolio__grid" role="tabpanel">
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="kitchen" data-delay="0">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="180" width="320" height="80" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="60" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="140" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="220" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="300" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="50" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Modern Kitchen Remodel</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Kitchen Remodel</span>
+                <h3 class="portfolio__title">Modern Minimalist Kitchen</h3>
+                <p class="portfolio__desc">Complete gut renovation with custom Italian cabinetry and quartz countertops.</p>
+                <button class="portfolio__view-btn" data-project="1" aria-label="View Modern Minimalist Kitchen project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="bathroom" data-delay="100">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <ellipse cx="200" cy="200" rx="120" ry="50" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="80" y="80" width="240" height="120" rx="4" fill="none" stroke="#FF6B35" stroke-width="1" opacity="0.5"/>
+                  <circle cx="320" cy="180" r="20" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <text x="200" y="50" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Luxury Bathroom</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Bathroom</span>
+                <h3 class="portfolio__title">Luxury Spa Bathroom</h3>
+                <p class="portfolio__desc">Freestanding tub, rainfall shower, heated marble floors, and ambient lighting.</p>
+                <button class="portfolio__view-btn" data-project="2" aria-label="View Luxury Spa Bathroom project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="addition" data-delay="200">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="140" width="150" height="120" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <path d="M40 140L115 80L190 140" stroke="#FF6B35" stroke-width="1.5" fill="none"/>
+                  <rect x="190" y="100" width="170" height="160" fill="#2a2a4a" stroke="#00E5A0" stroke-width="2" stroke-dasharray="6 3"/>
+                  <path d="M190 100L275 50L360 100" stroke="#00E5A0" stroke-width="2" fill="none" stroke-dasharray="6 3"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Second Story Addition</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Addition</span>
+                <h3 class="portfolio__title">Second Story Addition</h3>
+                <p class="portfolio__desc">Added 1,200 sq ft second floor with master suite and two bedrooms.</p>
+                <button class="portfolio__view-btn" data-project="3" aria-label="View Second Story Addition project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="commercial" data-delay="0">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="60" y="60" width="280" height="200" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <line x1="60" y1="120" x2="340" y2="120" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="80" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="170" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="260" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Restaurant Build-Out</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Commercial</span>
+                <h3 class="portfolio__title">Upscale Restaurant Build-Out</h3>
+                <p class="portfolio__desc">Full commercial kitchen, dining room, bar area, and outdoor patio construction.</p>
+                <button class="portfolio__view-btn" data-project="4" aria-label="View Restaurant Build-Out project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="kitchen" data-delay="100">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="120" width="320" height="100" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="100" y="60" width="200" height="60" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <circle cx="200" cy="90" r="15" stroke="#FF6B35" stroke-width="1.5" fill="none"/>
+                  <rect x="140" y="240" width="120" height="30" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Industrial Kitchen</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Kitchen Remodel</span>
+                <h3 class="portfolio__title">Industrial Loft Kitchen</h3>
+                <p class="portfolio__desc">Exposed brick, steel fixtures, concrete countertops — industrial charm meets modern function.</p>
+                <button class="portfolio__view-btn" data-project="5" aria-label="View Industrial Loft Kitchen project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="bathroom" data-delay="200">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="60" y="60" width="160" height="200" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="80" y="80" width="120" height="160" rx="2" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <circle cx="140" cy="160" r="30" fill="none" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="260" y="120" width="80" height="140" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Master Bathroom</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Bathroom</span>
+                <h3 class="portfolio__title">Master Bath Overhaul</h3>
+                <p class="portfolio__desc">Double vanity, frameless glass enclosure, and custom tile work throughout.</p>
+                <button class="portfolio__view-btn" data-project="6" aria-label="View Master Bath Overhaul project details">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="Close lightbox">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="lightbox__image" id="lightboxImage"></div>
+      <div class="lightbox__details">
+        <span class="lightbox__category" id="lightboxCategory"></span>
+        <h3 class="lightbox__title" id="lightboxTitle"></h3>
+        <p class="lightbox__desc" id="lightboxDesc"></p>
+        <a href="request-bid.html" class="btn btn--primary" id="lightboxCta">Get a Quote for This</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo" aria-label="Apex Construction Home">
+            <svg class="navbar__logo-icon" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+              <polygon points="20,2 38,38 2,38" fill="none" stroke="#FF6B35" stroke-width="3"/>
+              <line x1="20" y1="14" x2="20" y2="30" stroke="#FF6B35" stroke-width="3"/>
+              <line x1="12" y1="26" x2="28" y2="26" stroke="#FF6B35" stroke-width="2"/>
+            </svg>
+            <span class="navbar__logo-text">APEX</span>
+          </a>
+          <p class="footer__tagline">Bold builds. Flawless finishes.<br>Your vision, our blueprint.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#0d0d1a"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="request-bid.html">Request a Bid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Services</h4>
+          <ul>
+            <li><a href="service-kitchen.html">Kitchen Remodeling</a></li>
+            <li><a href="service-bathroom.html">Bathroom Renovation</a></li>
+            <li><a href="service-additions.html">Home Additions</a></li>
+            <li><a href="service-commercial.html">Commercial Construction</a></li>
+            <li><a href="service-whole-home.html">Whole-Home Renovation</a></li>
+            <li><a href="service-new-construction.html">New Construction</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Contact Info</h4>
+          <ul>
+            <li><a href="tel:+19085551234">(908) 555-1234</a></li>
+            <li><a href="mailto:info@apexconstruction.com">info@apexconstruction.com</a></li>
+            <li>456 Industrial Blvd, Suite 200</li>
+            <li>Newark, NJ 07102</li>
+            <li>NJ HIC License #13VH12345678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> Apex Construction &amp; Renovation. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>
