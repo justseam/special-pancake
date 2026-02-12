@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apex Construction & Renovation — Bold builds, flawless finishes. Premium residential and commercial construction services.">
+  <title>APEX Construction & Renovation | Bold Builds, Flawless Finishes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__logo" aria-label="Apex Construction Home">
+        <svg class="navbar__logo-icon" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 38,38 2,38" fill="none" stroke="#FF6B35" stroke-width="3"/>
+          <line x1="20" y1="14" x2="20" y2="30" stroke="#FF6B35" stroke-width="3"/>
+          <line x1="12" y1="26" x2="28" y2="26" stroke="#FF6B35" stroke-width="2"/>
+        </svg>
+        <span class="navbar__logo-text">APEX</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul class="navbar__list">
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#services" class="navbar__link">Services</a></li>
+          <li><a href="#portfolio" class="navbar__link">Portfolio</a></li>
+          <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+          <li><a href="#bid" class="navbar__link navbar__link--cta">Request a Bid</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__particles" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__badge animate-on-scroll" data-animation="fade-in">
+          <span>Est. 2005 &mdash; 20+ Years of Excellence</span>
+        </div>
+        <h1 class="hero__title animate-on-scroll" data-animation="slide-up">
+          WE DON'T JUST BUILD.<br>
+          <span class="hero__title--accent">WE TRANSFORM.</span>
+        </h1>
+        <p class="hero__subtitle animate-on-scroll" data-animation="slide-up" data-delay="200">
+          Premium residential &amp; commercial construction. From concept to completion,
+          we deliver bold builds with flawless finishes.
+        </p>
+        <div class="hero__actions animate-on-scroll" data-animation="slide-up" data-delay="400">
+          <a href="#bid" class="btn btn--primary btn--lg">
+            Request a Bid
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#portfolio" class="btn btn--outline btn--lg">View Our Work</a>
+        </div>
+        <div class="hero__stats animate-on-scroll" data-animation="fade-in" data-delay="600">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="500">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">Projects Completed</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="20">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">Years Experience</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="98">0</span><span class="hero__stat-plus">%</span>
+            <span class="hero__stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+      <!-- Diagonal cut at bottom -->
+      <div class="section-angle section-angle--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image-block animate-on-scroll" data-animation="slide-right">
+            <div class="about__image-wrapper">
+              <div class="about__image-placeholder">
+                <!-- Placeholder construction image -->
+                <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="600" height="500" fill="#1a1a2e"/>
+                  <rect x="100" y="200" width="120" height="250" fill="#2a2a4a" stroke="#FF6B35" stroke-width="2"/>
+                  <rect x="240" y="150" width="120" height="300" fill="#2a2a4a" stroke="#FF6B35" stroke-width="2"/>
+                  <rect x="380" y="180" width="120" height="270" fill="#2a2a4a" stroke="#FF6B35" stroke-width="2"/>
+                  <rect x="120" y="280" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="170" y="280" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="120" y="340" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="170" y="340" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="260" y="220" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="310" y="220" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="260" y="280" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="310" y="280" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="260" y="340" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="310" y="340" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="400" y="250" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="450" y="250" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="400" y="320" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <rect x="450" y="320" width="30" height="40" fill="#FF6B35" opacity="0.6"/>
+                  <line x1="0" y1="450" x2="600" y2="450" stroke="#333" stroke-width="2"/>
+                  <text x="300" y="100" text-anchor="middle" fill="#555" font-size="18" font-family="Inter, sans-serif">About — Team Photo</text>
+                </svg>
+              </div>
+              <div class="about__experience-badge">
+                <span class="about__experience-number">20+</span>
+                <span class="about__experience-text">Years of<br>Excellence</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__content animate-on-scroll" data-animation="slide-left">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title" id="about-heading">Built on Grit.<br>Driven by <span class="text-accent">Precision.</span></h2>
+            <p class="about__text">
+              At Apex Construction &amp; Renovation, we don't believe in cutting corners — we believe
+              in cutting through expectations. Founded in 2005, our team of licensed professionals
+              has been reshaping homes and commercial spaces across the tri-state area with an
+              uncompromising commitment to quality.
+            </p>
+            <p class="about__text">
+              From gut renovations to ground-up builds, we bring the same intensity to every project:
+              meticulous planning, premium materials, and craftsmanship that speaks for itself. Your
+              vision is our blueprint.
+            </p>
+            <div class="about__badges">
+              <div class="badge">
+                <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <div>
+                  <strong>Licensed &amp; Insured</strong>
+                  <span>Full coverage, zero risk</span>
+                </div>
+              </div>
+              <div class="badge">
+                <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                  <path d="M9 12l2 2 4-4"/>
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                </svg>
+                <div>
+                  <strong>Certified Professionals</strong>
+                  <span>Expert team, every trade</span>
+                </div>
+              </div>
+              <div class="badge">
+                <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                  <path d="M12 8v4l3 3"/>
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+                <div>
+                  <strong>On-Time Delivery</strong>
+                  <span>We respect your schedule</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="section-angle section-angle--top" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title" id="services-heading">Our <span class="text-accent">Services</span></h2>
+          <p class="section-subtitle">From concept to completion, we handle every phase of construction and renovation with precision and passion.</p>
+        </div>
+        <div class="services__grid">
+          <!-- Service 1 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="0">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="24" width="48" height="32" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <path d="M8 24L32 8L56 24" stroke="#FF6B35" stroke-width="2.5" stroke-linejoin="round"/>
+                <rect x="24" y="38" width="16" height="18" rx="1" stroke="#FF6B35" stroke-width="2"/>
+                <rect x="14" y="32" width="8" height="8" rx="1" stroke="#FF6B35" stroke-width="1.5"/>
+                <rect x="42" y="32" width="8" height="8" rx="1" stroke="#FF6B35" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Kitchen Remodeling</h3>
+            <p class="service-card__text">Complete kitchen transformations — custom cabinetry, premium countertops, state-of-the-art appliance integration, and layouts that flow.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <!-- Service 2 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="100">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="10" y="12" width="44" height="44" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <ellipse cx="32" cy="40" rx="10" ry="8" stroke="#FF6B35" stroke-width="2"/>
+                <circle cx="32" cy="22" r="5" stroke="#FF6B35" stroke-width="2"/>
+                <path d="M22 56V12" stroke="#FF6B35" stroke-width="1" opacity="0.3"/>
+                <path d="M42 56V12" stroke="#FF6B35" stroke-width="1" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Bathroom Renovation</h3>
+            <p class="service-card__text">Luxury bathrooms built to last. Walk-in showers, soaking tubs, heated floors, and finishes that turn daily routines into experiences.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <!-- Service 3 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="200">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="4" y="28" width="24" height="28" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <path d="M4 28L16 16L28 28" stroke="#FF6B35" stroke-width="2.5" stroke-linejoin="round"/>
+                <rect x="28" y="20" width="32" height="36" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <path d="M28 20L44 8L60 20" stroke="#FF6B35" stroke-width="2.5" stroke-linejoin="round"/>
+                <rect x="36" y="36" width="8" height="12" stroke="#FF6B35" stroke-width="1.5"/>
+                <rect x="48" y="28" width="6" height="6" stroke="#FF6B35" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Home Additions</h3>
+            <p class="service-card__text">Need more space? We design and build seamless additions that match your existing architecture — from extra bedrooms to full second stories.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <!-- Service 4 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="0">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="6" y="16" width="52" height="40" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <line x1="6" y1="28" x2="58" y2="28" stroke="#FF6B35" stroke-width="2"/>
+                <line x1="6" y1="40" x2="58" y2="40" stroke="#FF6B35" stroke-width="2"/>
+                <line x1="22" y1="16" x2="22" y2="56" stroke="#FF6B35" stroke-width="2"/>
+                <line x1="42" y1="16" x2="42" y2="56" stroke="#FF6B35" stroke-width="2"/>
+                <rect x="6" y="8" width="52" height="8" rx="1" stroke="#FF6B35" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Commercial Construction</h3>
+            <p class="service-card__text">Office build-outs, retail spaces, restaurants, and more. We deliver commercial projects on time, on budget, and built to code.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <!-- Service 5 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="100">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="20" width="48" height="36" rx="2" stroke="#FF6B35" stroke-width="2.5"/>
+                <path d="M8 20L32 4L56 20" stroke="#FF6B35" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M16 56V32h12v24" stroke="#FF6B35" stroke-width="2"/>
+                <rect x="36" y="32" width="12" height="10" rx="1" stroke="#FF6B35" stroke-width="1.5"/>
+                <line x1="16" y1="28" x2="48" y2="28" stroke="#FF6B35" stroke-width="1" stroke-dasharray="4 2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Whole-Home Renovation</h3>
+            <p class="service-card__text">Total property overhauls. We gut it, redesign it, and rebuild it — transforming outdated houses into modern masterpieces.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+          <!-- Service 6 -->
+          <article class="service-card animate-on-scroll" data-animation="slide-up" data-delay="200">
+            <div class="service-card__icon-wrap">
+              <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 56V20L32 8L52 20V56" stroke="#FF6B35" stroke-width="2.5" stroke-linejoin="round"/>
+                <rect x="20" y="28" width="10" height="10" stroke="#FF6B35" stroke-width="1.5"/>
+                <rect x="34" y="28" width="10" height="10" stroke="#FF6B35" stroke-width="1.5"/>
+                <path d="M26 56V44h12v12" stroke="#FF6B35" stroke-width="2"/>
+                <line x1="4" y1="56" x2="60" y2="56" stroke="#FF6B35" stroke-width="2.5"/>
+                <circle cx="52" cy="12" r="6" stroke="#FF6B35" stroke-width="1.5"/>
+                <path d="M52 9v6M49 12h6" stroke="#FF6B35" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">New Construction</h3>
+            <p class="service-card__text">Building your dream from the ground up. Custom homes designed around your lifestyle, built with materials that endure generations.</p>
+            <a href="#bid" class="service-card__link">
+              Get a Quote
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+      <div class="section-angle section-angle--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+          <span class="section-tag">Our Work</span>
+          <h2 class="section-title" id="portfolio-heading">Recent <span class="text-accent">Projects</span></h2>
+          <p class="section-subtitle">See the transformations for yourself. Every project tells a story of vision meeting craftsmanship.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio__filters animate-on-scroll" data-animation="fade-in" role="tablist" aria-label="Filter projects by type">
+          <button class="portfolio__filter active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="portfolio__filter" data-filter="kitchen" role="tab" aria-selected="false">Kitchen</button>
+          <button class="portfolio__filter" data-filter="bathroom" role="tab" aria-selected="false">Bathroom</button>
+          <button class="portfolio__filter" data-filter="addition" role="tab" aria-selected="false">Additions</button>
+          <button class="portfolio__filter" data-filter="commercial" role="tab" aria-selected="false">Commercial</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio__grid" role="tabpanel">
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="kitchen" data-delay="0">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 20;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="180" width="320" height="80" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="60" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="140" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="220" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="300" y="100" width="60" height="80" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="50" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Modern Kitchen Remodel</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Kitchen Remodel</span>
+                <h3 class="portfolio__title">Modern Minimalist Kitchen</h3>
+                <p class="portfolio__desc">Complete gut renovation with custom Italian cabinetry and quartz countertops.</p>
+                <button class="portfolio__view-btn" data-project="1" aria-label="View Modern Minimalist Kitchen project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="bathroom" data-delay="100">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 200;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <ellipse cx="200" cy="200" rx="120" ry="50" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="80" y="80" width="240" height="120" rx="4" fill="none" stroke="#FF6B35" stroke-width="1" opacity="0.5"/>
+                  <circle cx="320" cy="180" r="20" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <text x="200" y="50" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Luxury Bathroom</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Bathroom</span>
+                <h3 class="portfolio__title">Luxury Spa Bathroom</h3>
+                <p class="portfolio__desc">Freestanding tub, rainfall shower, heated marble floors, and ambient lighting.</p>
+                <button class="portfolio__view-btn" data-project="2" aria-label="View Luxury Spa Bathroom project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="addition" data-delay="200">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 120;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="140" width="150" height="120" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <path d="M40 140L115 80L190 140" stroke="#FF6B35" stroke-width="1.5" fill="none"/>
+                  <rect x="190" y="100" width="170" height="160" fill="#2a2a4a" stroke="#00E5A0" stroke-width="2" stroke-dasharray="6 3"/>
+                  <path d="M190 100L275 50L360 100" stroke="#00E5A0" stroke-width="2" fill="none" stroke-dasharray="6 3"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Second Story Addition</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Addition</span>
+                <h3 class="portfolio__title">Second Story Addition</h3>
+                <p class="portfolio__desc">Added 1,200 sq ft second floor with master suite and two bedrooms.</p>
+                <button class="portfolio__view-btn" data-project="3" aria-label="View Second Story Addition project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="commercial" data-delay="0">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 280;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="60" y="60" width="280" height="200" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <line x1="60" y1="120" x2="340" y2="120" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="80" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="170" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <rect x="260" y="140" width="60" height="60" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Restaurant Build-Out</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Commercial</span>
+                <h3 class="portfolio__title">Upscale Restaurant Build-Out</h3>
+                <p class="portfolio__desc">Full commercial kitchen, dining room, bar area, and outdoor patio construction.</p>
+                <button class="portfolio__view-btn" data-project="4" aria-label="View Restaurant Build-Out project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="kitchen" data-delay="100">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 40;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="40" y="120" width="320" height="100" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="100" y="60" width="200" height="60" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <circle cx="200" cy="90" r="15" stroke="#FF6B35" stroke-width="1.5" fill="none"/>
+                  <rect x="140" y="240" width="120" height="30" rx="2" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Industrial Kitchen</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Kitchen Remodel</span>
+                <h3 class="portfolio__title">Industrial Loft Kitchen</h3>
+                <p class="portfolio__desc">Exposed brick, steel fixtures, concrete countertops — industrial charm meets modern function.</p>
+                <button class="portfolio__view-btn" data-project="5" aria-label="View Industrial Loft Kitchen project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio__item animate-on-scroll" data-animation="scale-in" data-category="bathroom" data-delay="200">
+            <div class="portfolio__item-inner">
+              <div class="portfolio__image-placeholder" style="--hue: 180;">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="400" height="300" fill="#1a1a2e"/>
+                  <rect x="60" y="60" width="160" height="200" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="80" y="80" width="120" height="160" rx="2" fill="none" stroke="#FF6B35" stroke-width="1"/>
+                  <circle cx="140" cy="160" r="30" fill="none" stroke="#FF6B35" stroke-width="1.5"/>
+                  <rect x="260" y="120" width="80" height="140" rx="4" fill="#2a2a4a" stroke="#FF6B35" stroke-width="1.5"/>
+                  <text x="200" y="40" text-anchor="middle" fill="#555" font-size="14" font-family="Inter">Master Bathroom</text>
+                </svg>
+              </div>
+              <div class="portfolio__overlay">
+                <span class="portfolio__category">Bathroom</span>
+                <h3 class="portfolio__title">Master Bath Overhaul</h3>
+                <p class="portfolio__desc">Double vanity, frameless glass enclosure, and custom tile work throughout.</p>
+                <button class="portfolio__view-btn" data-project="6" aria-label="View Master Bath Overhaul project details">
+                  View Project
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section-angle section-angle--top" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+          <span class="section-tag">Client Stories</span>
+          <h2 class="section-title" id="testimonials-heading">What They <span class="text-accent">Say</span></h2>
+          <p class="section-subtitle">Don't take our word for it — hear from homeowners and businesses who trusted us with their spaces.</p>
+        </div>
+
+        <div class="testimonials__carousel" role="region" aria-label="Client testimonials">
+          <div class="testimonials__track" id="testimonialTrack">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "Apex completely transformed our 1960s split-level into a modern open-concept dream. The crew was professional, communicative, and the quality of work is outstanding. We couldn't be happier with the results."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+                <div>
+                  <strong class="testimonial-card__name">Michael & Rachel Thompson</strong>
+                  <span class="testimonial-card__project">Whole-Home Renovation — Westfield, NJ</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "We hired Apex for our restaurant build-out and they delivered beyond expectations. They understood our vision from day one and executed flawlessly. The space is stunning and our customers constantly compliment it."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">DL</div>
+                <div>
+                  <strong class="testimonial-card__name">David Lombardi</strong>
+                  <span class="testimonial-card__project">Restaurant Build-Out — Hoboken, NJ</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "Our kitchen renovation was a huge undertaking and Apex made it painless. They were upfront about timelines, kept the workspace clean, and the finished product is magazine-worthy. Highly recommend."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">SP</div>
+                <div>
+                  <strong class="testimonial-card__name">Sarah Patel</strong>
+                  <span class="testimonial-card__project">Kitchen Remodel — Summit, NJ</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF6B35" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <blockquote class="testimonial-card__quote">
+                "We added a second story to our Cape Cod and the Apex team made it look like it was always meant to be there. Seamless integration, top-notch structural work, and they finished ahead of schedule!"
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">JK</div>
+                <div>
+                  <strong class="testimonial-card__name">James & Karen Wu</strong>
+                  <span class="testimonial-card__project">Second Story Addition — Montclair, NJ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials__nav">
+            <button class="testimonials__nav-btn" id="prevTestimonial" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation"></div>
+            <button class="testimonials__nav-btn" id="nextTestimonial" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="section-angle section-angle--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== BID FORM ========== -->
+    <section class="bid" id="bid" aria-labelledby="bid-heading">
+      <div class="container">
+        <div class="bid__grid">
+          <div class="bid__info animate-on-scroll" data-animation="slide-right">
+            <span class="section-tag">Start Your Project</span>
+            <h2 class="section-title" id="bid-heading">Request a <span class="text-accent">Free Bid</span></h2>
+            <p class="bid__text">Ready to transform your space? Fill out the form and our team will get back to you within 24 hours with a detailed estimate. No obligation, no pressure — just honest numbers.</p>
+
+            <div class="bid__features">
+              <div class="bid__feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <span>Free, no-obligation estimates</span>
+              </div>
+              <div class="bid__feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <span>Response within 24 hours</span>
+              </div>
+              <div class="bid__feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <span>Transparent, detailed pricing</span>
+              </div>
+              <div class="bid__feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <span>Licensed, bonded &amp; insured</span>
+              </div>
+            </div>
+
+            <div class="bid__contact-quick">
+              <p><strong>Prefer to talk?</strong></p>
+              <a href="tel:+19085551234" class="bid__phone">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                (908) 555-1234
+              </a>
+            </div>
+          </div>
+
+          <div class="bid__form-wrapper animate-on-scroll" data-animation="slide-left">
+            <form class="bid-form" id="bidForm" novalidate>
+              <div class="bid-form__row">
+                <div class="bid-form__group">
+                  <label for="bidName" class="bid-form__label">Full Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="bidName" name="name" class="bid-form__input" placeholder="John Smith" required aria-required="true" autocomplete="name">
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+                <div class="bid-form__group">
+                  <label for="bidEmail" class="bid-form__label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                  <input type="email" id="bidEmail" name="email" class="bid-form__input" placeholder="john@example.com" required aria-required="true" autocomplete="email">
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="bid-form__row">
+                <div class="bid-form__group">
+                  <label for="bidPhone" class="bid-form__label">Phone Number <span class="required" aria-hidden="true">*</span></label>
+                  <input type="tel" id="bidPhone" name="phone" class="bid-form__input" placeholder="(908) 555-1234" required aria-required="true" autocomplete="tel">
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+                <div class="bid-form__group">
+                  <label for="bidAddress" class="bid-form__label">Project Address</label>
+                  <input type="text" id="bidAddress" name="address" class="bid-form__input" placeholder="123 Main St, City, State" autocomplete="street-address">
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="bid-form__row">
+                <div class="bid-form__group">
+                  <label for="bidProject" class="bid-form__label">Project Type <span class="required" aria-hidden="true">*</span></label>
+                  <select id="bidProject" name="projectType" class="bid-form__input bid-form__select" required aria-required="true">
+                    <option value="">Select a project type</option>
+                    <option value="kitchen">Kitchen Remodeling</option>
+                    <option value="bathroom">Bathroom Renovation</option>
+                    <option value="addition">Home Addition</option>
+                    <option value="whole-home">Whole-Home Renovation</option>
+                    <option value="commercial">Commercial Construction</option>
+                    <option value="new-construction">New Construction</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+                <div class="bid-form__group">
+                  <label for="bidBudget" class="bid-form__label">Budget Range</label>
+                  <select id="bidBudget" name="budget" class="bid-form__input bid-form__select">
+                    <option value="">Select budget range</option>
+                    <option value="under-25k">Under $25,000</option>
+                    <option value="25k-50k">$25,000 – $50,000</option>
+                    <option value="50k-100k">$50,000 – $100,000</option>
+                    <option value="100k-250k">$100,000 – $250,000</option>
+                    <option value="250k-500k">$250,000 – $500,000</option>
+                    <option value="500k-plus">$500,000+</option>
+                  </select>
+                  <span class="bid-form__error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="bid-form__group bid-form__group--full">
+                <label for="bidDescription" class="bid-form__label">Project Description <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="bidDescription" name="description" class="bid-form__input bid-form__textarea" placeholder="Tell us about your project — scope, goals, timeline, any specific requirements..." rows="5" required aria-required="true"></textarea>
+                <span class="bid-form__error" role="alert"></span>
+              </div>
+
+              <div class="bid-form__group bid-form__group--full">
+                <fieldset class="bid-form__fieldset">
+                  <legend class="bid-form__label">Preferred Contact Method</legend>
+                  <div class="bid-form__radio-group">
+                    <label class="bid-form__radio">
+                      <input type="radio" name="contactMethod" value="phone" checked>
+                      <span class="bid-form__radio-custom"></span>
+                      Phone
+                    </label>
+                    <label class="bid-form__radio">
+                      <input type="radio" name="contactMethod" value="email">
+                      <span class="bid-form__radio-custom"></span>
+                      Email
+                    </label>
+                    <label class="bid-form__radio">
+                      <input type="radio" name="contactMethod" value="text">
+                      <span class="bid-form__radio-custom"></span>
+                      Text Message
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg bid-form__submit" id="bidSubmit">
+                <span class="bid-form__submit-text">Submit Request</span>
+                <span class="bid-form__submit-loading" aria-hidden="true">
+                  <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" opacity="0.25"/><path d="M12 2a10 10 0 0110 10" stroke-linecap="round"/></svg>
+                  Sending...
+                </span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+
+              <!-- Form Messages -->
+              <div class="bid-form__message bid-form__message--success" id="formSuccess" role="alert" aria-live="polite" hidden>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                <div>
+                  <strong>Request Submitted!</strong>
+                  <p>Thank you for reaching out. Our team will review your project details and contact you within 24 hours.</p>
+                </div>
+              </div>
+
+              <div class="bid-form__message bid-form__message--error" id="formError" role="alert" aria-live="polite" hidden>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <div>
+                  <strong>Something went wrong.</strong>
+                  <p>Please try again or call us directly at (908) 555-1234.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section-angle section-angle--top" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fade-in">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title" id="contact-heading">Contact <span class="text-accent">Us</span></h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__card animate-on-scroll" data-animation="slide-up" data-delay="0">
+            <div class="contact__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <h3 class="contact__card-title">Call Us</h3>
+            <a href="tel:+19085551234" class="contact__card-value">(908) 555-1234</a>
+            <span class="contact__card-note">Mon–Fri: 7AM – 6PM<br>Sat: 8AM – 2PM</span>
+          </div>
+
+          <div class="contact__card animate-on-scroll" data-animation="slide-up" data-delay="100">
+            <div class="contact__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3 class="contact__card-title">Email Us</h3>
+            <a href="mailto:info@apexconstruction.com" class="contact__card-value">info@apexconstruction.com</a>
+            <span class="contact__card-note">We reply within 24 hours</span>
+          </div>
+
+          <div class="contact__card animate-on-scroll" data-animation="slide-up" data-delay="200">
+            <div class="contact__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="contact__card-title">Visit Us</h3>
+            <span class="contact__card-value">456 Industrial Blvd<br>Suite 200, Newark, NJ 07102</span>
+            <span class="contact__card-note">By appointment only</span>
+          </div>
+
+          <div class="contact__card animate-on-scroll" data-animation="slide-up" data-delay="300">
+            <div class="contact__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+              </svg>
+            </div>
+            <h3 class="contact__card-title">Service Areas</h3>
+            <span class="contact__card-value">Northern &amp; Central NJ</span>
+            <span class="contact__card-note">Essex, Union, Morris,<br>Somerset, Middlesex Counties</span>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="contact__map animate-on-scroll" data-animation="fade-in">
+          <div class="contact__map-placeholder" aria-label="Map showing office location at 456 Industrial Blvd, Newark NJ">
+            <svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="1200" height="400" fill="#12121e"/>
+              <!-- Grid lines -->
+              <g stroke="#1e1e32" stroke-width="1">
+                <line x1="0" y1="80" x2="1200" y2="80"/>
+                <line x1="0" y1="160" x2="1200" y2="160"/>
+                <line x1="0" y1="240" x2="1200" y2="240"/>
+                <line x1="0" y1="320" x2="1200" y2="320"/>
+                <line x1="200" y1="0" x2="200" y2="400"/>
+                <line x1="400" y1="0" x2="400" y2="400"/>
+                <line x1="600" y1="0" x2="600" y2="400"/>
+                <line x1="800" y1="0" x2="800" y2="400"/>
+                <line x1="1000" y1="0" x2="1000" y2="400"/>
+              </g>
+              <!-- Roads -->
+              <g stroke="#2a2a4a" stroke-width="3">
+                <line x1="0" y1="200" x2="1200" y2="200"/>
+                <line x1="600" y1="0" x2="600" y2="400"/>
+                <line x1="100" y1="100" x2="1100" y2="300"/>
+                <line x1="300" y1="0" x2="900" y2="400"/>
+              </g>
+              <!-- Location pin -->
+              <g transform="translate(600, 180)">
+                <circle r="20" fill="#FF6B35" opacity="0.2"/>
+                <circle r="12" fill="#FF6B35" opacity="0.4"/>
+                <circle r="6" fill="#FF6B35"/>
+              </g>
+              <text x="600" y="140" text-anchor="middle" fill="#FF6B35" font-size="14" font-family="Inter, sans-serif" font-weight="600">APEX CONSTRUCTION HQ</text>
+              <text x="600" y="240" text-anchor="middle" fill="#666" font-size="12" font-family="Inter, sans-serif">456 Industrial Blvd, Suite 200, Newark, NJ 07102</text>
+              <text x="600" y="350" text-anchor="middle" fill="#444" font-size="11" font-family="Inter, sans-serif">Replace this placeholder with an embedded Google Map</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="navbar__logo" aria-label="Apex Construction Home">
+            <svg class="navbar__logo-icon" width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
+              <polygon points="20,2 38,38 2,38" fill="none" stroke="#FF6B35" stroke-width="3"/>
+              <line x1="20" y1="14" x2="20" y2="30" stroke="#FF6B35" stroke-width="3"/>
+              <line x1="12" y1="26" x2="28" y2="26" stroke="#FF6B35" stroke-width="2"/>
+            </svg>
+            <span class="navbar__logo-text">APEX</span>
+          </a>
+          <p class="footer__tagline">Bold builds. Flawless finishes.<br>Your vision, our blueprint.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#0d0d1a"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#bid">Request a Bid</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Services</h4>
+          <ul>
+            <li><a href="#services">Kitchen Remodeling</a></li>
+            <li><a href="#services">Bathroom Renovation</a></li>
+            <li><a href="#services">Home Additions</a></li>
+            <li><a href="#services">Commercial Construction</a></li>
+            <li><a href="#services">Whole-Home Renovation</a></li>
+            <li><a href="#services">New Construction</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Contact Info</h4>
+          <ul>
+            <li><a href="tel:+19085551234">(908) 555-1234</a></li>
+            <li><a href="mailto:info@apexconstruction.com">info@apexconstruction.com</a></li>
+            <li>456 Industrial Blvd, Suite 200</li>
+            <li>Newark, NJ 07102</li>
+            <li>NJ HIC License #13VH12345678</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear"></span> Apex Construction &amp; Renovation. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+    <div class="lightbox__overlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" aria-label="Close lightbox">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="lightbox__image" id="lightboxImage"></div>
+      <div class="lightbox__details">
+        <span class="lightbox__category" id="lightboxCategory"></span>
+        <h3 class="lightbox__title" id="lightboxTitle"></h3>
+        <p class="lightbox__desc" id="lightboxDesc"></p>
+        <a href="#bid" class="btn btn--primary" id="lightboxCta">Get a Quote for This</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
