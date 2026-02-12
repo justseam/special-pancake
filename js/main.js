@@ -1,5 +1,5 @@
 /* ==========================================================================
-   APEX CONSTRUCTION — Main JavaScript (Multi-Page)
+   SNC (SEVILLAS NEW CONSTRUCTION) — Main JavaScript (Multi-Page)
    Navigation, scroll animations, form handling, portfolio, testimonials
    ========================================================================== */
 
@@ -594,9 +594,9 @@
 
         // Save to localStorage as a simple persistence mechanism
         try {
-          var submissions = JSON.parse(localStorage.getItem('apex_bid_submissions') || '[]');
+          var submissions = JSON.parse(localStorage.getItem('snc_bid_submissions') || '[]');
           submissions.push(formData);
-          localStorage.setItem('apex_bid_submissions', JSON.stringify(submissions));
+          localStorage.setItem('snc_bid_submissions', JSON.stringify(submissions));
         } catch (err) {
           // localStorage might not be available
         }
