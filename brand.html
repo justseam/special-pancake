@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sevillas New Construction — Brand Guidelines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:        #0d0d1a;
+      --bg-alt:    #12121e;
+      --bg-card:   #161628;
+      --bg-elev:   #1a1a2e;
+      --surface:   #22223a;
+      --border:    #2a2a4a;
+      --text:      #e0e0ec;
+      --muted:     #8888a0;
+      --dim:       #555570;
+      --accent:    #FF6B35;
+      --accent-h:  #FF8555;
+      --green:     #00E5A0;
+      --red:       #FF4757;
+      --white:     #ffffff;
+      --font-d:    'Bebas Neue', Impact, sans-serif;
+      --font-b:    'Inter', sans-serif;
+      --font-logo: 'Barlow Condensed', sans-serif;
+    }
+    body { font-family: var(--font-b); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+
+    /* ---- HEADER ---- */
+    .brand-header {
+      background: linear-gradient(135deg, #12121e 0%, #1a1a2e 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 0 50px;
+      position: relative; overflow: hidden;
+    }
+    .brand-header::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent);
+    }
+    .brand-header__eyebrow { font-family: var(--font-b); font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+    .brand-header__title { font-family: var(--font-d); font-size: 72px; line-height: 1; color: var(--white); margin-bottom: 12px; }
+    .brand-header__sub { font-size: 15px; color: var(--muted); max-width: 480px; }
+
+    /* ---- SECTION ---- */
+    .section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-family: var(--font-b); font-size: 11px; font-weight: 700; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 36px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* ---- LOGO GRID ---- */
+    .logo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .logo-cell {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 48px 32px; gap: 20px; min-height: 200px;
+    }
+    .logo-cell--dark  { background: var(--bg-card); }
+    .logo-cell--mid   { background: var(--surface); }
+    .logo-cell--light { background: #e8e8f0; }
+    .logo-cell--white { background: #ffffff; }
+    .logo-cell--accent{ background: var(--accent); }
+    .logo-cell--black { background: #000000; }
+    .logo-label { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    .logo-cell--light .logo-label, .logo-cell--white .logo-label { color: #888; }
+    .logo-cell--accent .logo-label { color: rgba(255,255,255,0.7); }
+
+    /* Logo variations */
+    .logo-lockup { display: flex; align-items: center; gap: 12px; }
+    .logo-lockup__text { font-family: var(--font-d); font-size: 28px; letter-spacing: 2px; line-height: 1; }
+    .logo-lockup__text--white { color: #fff; }
+    .logo-lockup__text--dark  { color: #0d0d1a; }
+    .logo-lockup__text--accent { color: var(--accent); }
+
+    .logo-stacked { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .logo-stacked__text { font-family: var(--font-d); font-size: 22px; letter-spacing: 4px; line-height: 1; }
+    .logo-stacked__sub  { font-family: var(--font-b); font-size: 9px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; }
+
+    .wordmark-only { font-family: var(--font-d); letter-spacing: 3px; }
+
+    /* ---- COLOR PALETTE ---- */
+    .color-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .color-card { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+    .color-swatch { height: 100px; }
+    .color-info { padding: 14px 16px; background: var(--bg-card); }
+    .color-name { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .color-hex  { font-size: 11px; font-family: 'SF Mono', 'Fira Code', monospace; color: var(--muted); }
+    .color-role { font-size: 10px; color: var(--dim); margin-top: 3px; }
+
+    .color-row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 16px; }
+    .color-chip { border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+    .color-chip__swatch { height: 48px; }
+    .color-chip__label { padding: 6px 8px; background: var(--bg-card); font-size: 9px; font-weight: 600; color: var(--muted); letter-spacing: 0.5px; }
+    .color-chip__hex { padding: 0 8px 6px; background: var(--bg-card); font-size: 9px; font-family: monospace; color: var(--dim); }
+
+    /* ---- TYPOGRAPHY ---- */
+    .type-block { margin-bottom: 40px; padding: 32px; background: var(--bg-card); border-radius: 10px; border: 1px solid var(--border); }
+    .type-meta { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+    .type-specimen { margin-bottom: 8px; }
+    .type-detail { font-size: 11px; color: var(--dim); font-family: monospace; margin-top: 6px; }
+
+    .type-scale { display: flex; flex-direction: column; gap: 20px; padding: 32px; background: var(--bg-card); border-radius: 10px; border: 1px solid var(--border); }
+    .type-scale-row { display: flex; align-items: baseline; gap: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .type-scale-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .type-scale-label { font-size: 10px; font-family: monospace; color: var(--dim); width: 90px; flex-shrink: 0; }
+    .type-scale-sample { color: var(--text); }
+
+    .weight-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .weight-card { padding: 24px 20px; background: var(--bg-card); border-radius: 10px; border: 1px solid var(--border); }
+    .weight-sample { font-size: 28px; color: var(--white); margin-bottom: 8px; line-height: 1; }
+    .weight-label { font-size: 10px; color: var(--muted); font-weight: 600; letter-spacing: 1px; }
+    .weight-value { font-size: 10px; color: var(--dim); font-family: monospace; }
+
+    /* ---- USAGE ---- */
+    .usage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .usage-card { padding: 28px; background: var(--bg-card); border-radius: 10px; border: 1px solid var(--border); }
+    .usage-card h4 { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 4px; font-family: var(--font-b); font-size: 14px; font-weight: 600; cursor: pointer; border: none; text-decoration: none; }
+    .btn--primary { background: var(--accent); color: #fff; }
+    .btn--outline  { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+    .btn--ghost    { background: var(--surface); color: var(--text); }
+    .btn--sm { padding: 8px 16px; font-size: 12px; }
+
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .badge { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .badge--accent { background: rgba(255,107,53,0.15); color: var(--accent); border: 1px solid rgba(255,107,53,0.3); }
+    .badge--green  { background: rgba(0,229,160,0.12); color: var(--green); border: 1px solid rgba(0,229,160,0.3); }
+    .badge--muted  { background: var(--surface); color: var(--muted); border: 1px solid var(--border); }
+
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+    .do-block, .dont-block { padding: 20px; }
+    .do-block   { background: rgba(0,229,160,0.05); }
+    .dont-block { background: rgba(255,71,87,0.05); }
+    .do-block h5   { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    .dont-block h5 { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+    .do-block ul, .dont-block ul { font-size: 12px; color: var(--muted); padding-left: 14px; display: flex; flex-direction: column; gap: 5px; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="brand-header">
+    <div class="container">
+      <div class="brand-header__eyebrow">Brand Guidelines</div>
+      <div style="margin-bottom: 16px;">
+        <svg width="360" height="76" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+          <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+          <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+          <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+          <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+          <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="0.5">SEVILLAS</text>
+          <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+        </svg>
+      </div>
+      <div class="brand-header__sub">Visual identity standards for logos, color, and typography.</div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ===================== LOGOS ===================== -->
+    <section class="section">
+      <div class="section-title">Logo System</div>
+
+      <!-- Primary Lockup — Horizontal -->
+      <div style="margin-bottom: 2px; padding: 10px 14px; background: var(--bg-elev); border-radius: 6px 6px 0 0; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--dim);">Primary Lockup — Horizontal</div>
+      <div class="logo-grid" style="margin-bottom: 32px; border-radius: 0 0 8px 8px; overflow: hidden;">
+
+        <!-- On Dark (Primary) -->
+        <div class="logo-cell logo-cell--dark">
+          <svg width="260" height="56" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+            <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+            <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+            <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+            <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="0.5">SEVILLAS</text>
+            <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+          </svg>
+          <div class="logo-label">On Dark — Primary</div>
+        </div>
+
+        <!-- On White -->
+        <div class="logo-cell logo-cell--white">
+          <svg width="260" height="56" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+            <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+            <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+            <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/>
+            <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#0d0d1a" letter-spacing="0.5">SEVILLAS</text>
+            <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+          </svg>
+          <div class="logo-label">On White</div>
+        </div>
+
+        <!-- On Black -->
+        <div class="logo-cell logo-cell--black">
+          <svg width="260" height="56" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+            <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+            <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+            <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+            <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="0.5">SEVILLAS</text>
+            <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+          </svg>
+          <div class="logo-label">On Black</div>
+        </div>
+      </div>
+
+      <!-- Stacked Lockup -->
+      <div style="margin-bottom: 2px; padding: 10px 14px; background: var(--bg-elev); border-radius: 6px 6px 0 0; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--dim);">Icon Mark + Stacked Wordmark</div>
+      <div class="logo-grid" style="margin-bottom: 32px; border-radius: 0 0 8px 8px; overflow: hidden;">
+
+        <div class="logo-cell logo-cell--dark">
+          <div class="logo-stacked" style="align-items:center;">
+            <svg width="60" height="60" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+              <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+              <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+              <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+              <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            </svg>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:1px;margin-top:8px;">SEVILLAS</span>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;color:#FF6B35;letter-spacing:2px;">NEW CONSTRUCTION</span>
+          </div>
+          <div class="logo-label">On Dark</div>
+        </div>
+
+        <div class="logo-cell logo-cell--white">
+          <div class="logo-stacked" style="align-items:center;">
+            <svg width="60" height="60" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+              <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+              <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+              <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/>
+              <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            </svg>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#0d0d1a;letter-spacing:1px;margin-top:8px;">SEVILLAS</span>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;color:#FF6B35;letter-spacing:2px;">NEW CONSTRUCTION</span>
+          </div>
+          <div class="logo-label">On White</div>
+        </div>
+
+        <div class="logo-cell logo-cell--black">
+          <div class="logo-stacked" style="align-items:center;">
+            <svg width="60" height="60" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+              <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+              <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+              <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+              <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+            </svg>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:1px;margin-top:8px;">SEVILLAS</span>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;color:#FF6B35;letter-spacing:2px;">NEW CONSTRUCTION</span>
+          </div>
+          <div class="logo-label">On Black</div>
+        </div>
+      </div>
+
+      <!-- Icon Only -->
+      <div style="margin-bottom: 2px; padding: 10px 14px; background: var(--bg-elev); border-radius: 6px 6px 0 0; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--dim);">Icon Mark — Standalone</div>
+      <div class="logo-grid" style="margin-bottom: 32px; border-radius: 0 0 8px 8px; overflow: hidden;">
+
+        <!-- Size scale on dark -->
+        <div class="logo-cell logo-cell--dark" style="flex-direction: row; justify-content: space-around; position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="64" height="64" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:var(--dim);letter-spacing:1px;">64px</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="40" height="40" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:var(--dim);letter-spacing:1px;">40px</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="24" height="24" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:var(--dim);letter-spacing:1px;">24px</span>
+          </div>
+          <div class="logo-label" style="position:absolute;bottom:16px;">On Dark — Size Scale</div>
+        </div>
+
+        <!-- Size scale on white -->
+        <div class="logo-cell logo-cell--white" style="flex-direction: row; justify-content: space-around; position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="64" height="64" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:#aaa;letter-spacing:1px;">64px</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="40" height="40" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:#aaa;letter-spacing:1px;">40px</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+            <svg width="24" height="24" viewBox="0 0 62 66" fill="none"><rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/><line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/><rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/><circle cx="31" cy="33" r="5.5" fill="#FF6B35"/></svg>
+            <span style="font-size:9px;color:#aaa;letter-spacing:1px;">24px</span>
+          </div>
+          <div class="logo-label" style="position:absolute;bottom:16px;">On White — Size Scale</div>
+        </div>
+
+        <!-- Monochrome -->
+        <div class="logo-cell logo-cell--black" style="position:relative;">
+          <svg width="64" height="64" viewBox="0 0 62 66" fill="none">
+            <rect x="2" y="4" width="58" height="58" rx="6" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+            <line x1="2" y1="33" x2="60" y2="33" stroke="#ffffff" stroke-width="1.8"/>
+            <line x1="31" y1="4" x2="31" y2="62" stroke="#ffffff" stroke-width="1.8"/>
+            <rect x="14" y="16" width="34" height="34" rx="3" fill="rgba(255,255,255,0.08)" stroke="#ffffff" stroke-width="1.2"/>
+            <circle cx="31" cy="33" r="5.5" fill="#ffffff"/>
+          </svg>
+          <div class="logo-label">Monochrome White</div>
+        </div>
+      </div>
+
+      <!-- Wordmark Only -->
+      <div style="margin-bottom: 2px; padding: 10px 14px; background: var(--bg-elev); border-radius: 6px 6px 0 0; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--dim);">Wordmark Only — Barlow Condensed</div>
+      <div class="logo-grid" style="border-radius: 0 0 8px 8px; overflow: hidden;">
+        <div class="logo-cell logo-cell--dark" style="flex-direction:column;gap:4px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:800;color:#fff;letter-spacing:1px;">SEVILLAS</span>
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:#FF6B35;letter-spacing:2px;">NEW CONSTRUCTION</span>
+          <div class="logo-label" style="margin-top:8px;">White / Orange on Dark</div>
+        </div>
+        <div class="logo-cell logo-cell--dark" style="flex-direction:column;gap:4px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:800;color:#FF6B35;letter-spacing:1px;">SEVILLAS</span>
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:#FF6B35;letter-spacing:2px;opacity:0.6;">NEW CONSTRUCTION</span>
+          <div class="logo-label" style="margin-top:8px;">Accent on Dark</div>
+        </div>
+        <div class="logo-cell logo-cell--white" style="flex-direction:column;gap:4px;">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:800;color:#0d0d1a;letter-spacing:1px;">SEVILLAS</span>
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:#FF6B35;letter-spacing:2px;">NEW CONSTRUCTION</span>
+          <div class="logo-label" style="margin-top:8px;">Dark / Orange on White</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COLORS ===================== -->
+    <section class="section">
+      <div class="section-title">Color Palette</div>
+
+      <!-- Primary -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Primary</div>
+      <div class="color-grid" style="margin-bottom: 32px;">
+        <div class="color-card">
+          <div class="color-swatch" style="background:#FF6B35;"></div>
+          <div class="color-info">
+            <div class="color-name">Accent Orange</div>
+            <div class="color-hex">#FF6B35</div>
+            <div class="color-role">Primary brand color — CTAs, highlights, icons</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background:#FF8555;"></div>
+          <div class="color-info">
+            <div class="color-name">Accent Hover</div>
+            <div class="color-hex">#FF8555</div>
+            <div class="color-role">Hover state for accent elements</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background:#00E5A0;"></div>
+          <div class="color-info">
+            <div class="color-name">Success Green</div>
+            <div class="color-hex">#00E5A0</div>
+            <div class="color-role">Confirmations, success states, "Do" indicators</div>
+          </div>
+        </div>
+        <div class="color-card">
+          <div class="color-swatch" style="background:#FF4757;"></div>
+          <div class="color-info">
+            <div class="color-name">Error Red</div>
+            <div class="color-hex">#FF4757</div>
+            <div class="color-role">Errors, warnings, "Don't" indicators</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backgrounds -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Background Hierarchy</div>
+      <div class="color-row" style="margin-bottom: 32px; margin-top: 0;">
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#0d0d1a;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">Background</div>
+          <div class="color-chip__hex">#0d0d1a</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#12121e;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">BG Alt</div>
+          <div class="color-chip__hex">#12121e</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#161628;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">Card</div>
+          <div class="color-chip__hex">#161628</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#1a1a2e;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">Elevated</div>
+          <div class="color-chip__hex">#1a1a2e</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#22223a;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">Surface</div>
+          <div class="color-chip__hex">#22223a</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#2a2a4a;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">Border</div>
+          <div class="color-chip__hex">#2a2a4a</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#ffffff;border-bottom:1px solid #2a2a4a;"></div>
+          <div class="color-chip__label">White</div>
+          <div class="color-chip__hex">#ffffff</div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Text Hierarchy</div>
+      <div class="color-row" style="margin-top: 0; grid-template-columns: repeat(3,1fr); max-width: 400px;">
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#e0e0ec;"></div>
+          <div class="color-chip__label">Primary</div>
+          <div class="color-chip__hex">#e0e0ec</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#8888a0;"></div>
+          <div class="color-chip__label">Muted</div>
+          <div class="color-chip__hex">#8888a0</div>
+        </div>
+        <div class="color-chip">
+          <div class="color-chip__swatch" style="background:#555570;"></div>
+          <div class="color-chip__label">Dim</div>
+          <div class="color-chip__hex">#555570</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TYPOGRAPHY ===================== -->
+    <section class="section">
+      <div class="section-title">Typography</div>
+
+      <!-- Logo Font -->
+      <div class="type-block" style="margin-bottom: 16px;">
+        <div class="type-meta">Logo Font — Barlow Condensed</div>
+        <div class="type-specimen" style="font-family:'Barlow Condensed',sans-serif; font-size: 64px; font-weight: 800; line-height:1; color: var(--white);">SEVILLAS</div>
+        <div class="type-specimen" style="font-family:'Barlow Condensed',sans-serif; font-size: 40px; font-weight: 600; line-height:1; color: var(--accent); margin-top:4px;">NEW CONSTRUCTION</div>
+        <div class="type-detail">font-family: 'Barlow Condensed', sans-serif &nbsp;|&nbsp; weights: 600, 700, 800 &nbsp;|&nbsp; use: logo wordmark ONLY — not for general headings</div>
+      </div>
+
+      <!-- Display Font -->
+      <div class="type-block" style="margin-bottom: 16px;">
+        <div class="type-meta">Display Font — Bebas Neue</div>
+        <div class="type-specimen" style="font-family:'Bebas Neue',sans-serif; font-size: 80px; line-height:1; color: var(--white);">BOLD BUILDS</div>
+        <div class="type-specimen" style="font-family:'Bebas Neue',sans-serif; font-size: 80px; line-height:1; color: var(--accent);">FLAWLESS FINISHES</div>
+        <div class="type-specimen" style="font-family:'Bebas Neue',sans-serif; font-size: 48px; line-height:1; color: var(--muted); margin-top:12px;">Section Headings &amp; Hero Titles</div>
+        <div class="type-detail">font-family: 'Bebas Neue', Impact, sans-serif &nbsp;|&nbsp; weight: 400 (single weight) &nbsp;|&nbsp; use: ALL CAPS headings, hero titles, section labels</div>
+      </div>
+
+      <!-- Body Font -->
+      <div class="type-block" style="margin-bottom: 16px;">
+        <div class="type-meta">Body Font — Inter</div>
+        <div class="type-specimen" style="font-size: 16px; color: var(--text); max-width: 600px; line-height: 1.7;">
+          From concept to completion, we deliver bold builds with flawless finishes. Our team of licensed professionals brings the same intensity to every project — meticulous planning, premium materials, and craftsmanship that speaks for itself.
+        </div>
+        <div class="type-detail">font-family: 'Inter', sans-serif &nbsp;|&nbsp; use: body copy, UI labels, navigation, forms</div>
+      </div>
+
+      <!-- Type Scale -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Type Scale — Inter</div>
+      <div class="type-scale" style="margin-bottom: 24px;">
+        <div class="type-scale-row">
+          <span class="type-scale-label">12px / 700</span>
+          <span class="type-scale-sample" style="font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">SECTION TAG / EYEBROW</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">14px / 600</span>
+          <span class="type-scale-sample" style="font-size:14px;font-weight:600;">Navigation &amp; Button Labels</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">16px / 400</span>
+          <span class="type-scale-sample" style="font-size:16px;font-weight:400;">Body copy — default paragraph text</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">18px / 500</span>
+          <span class="type-scale-sample" style="font-size:18px;font-weight:500;">Lead paragraph / intro text</span>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-label">24px / 600</span>
+          <span class="type-scale-sample" style="font-size:24px;font-weight:600;">Card headings &amp; subheadings</span>
+        </div>
+        <div class="type-scale-row" style="border:none;padding:0;">
+          <span class="type-scale-label">Bebas / —</span>
+          <span class="type-scale-sample" style="font-family:'Bebas Neue',sans-serif;font-size:48px;line-height:1;color:var(--white);">HERO &amp; PAGE TITLES</span>
+        </div>
+      </div>
+
+      <!-- Weights -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Inter — Weight Reference</div>
+      <div class="weight-grid">
+        <div class="weight-card">
+          <div class="weight-sample" style="font-weight:300;">Aa</div>
+          <div class="weight-label">Light</div>
+          <div class="weight-value">300</div>
+        </div>
+        <div class="weight-card">
+          <div class="weight-sample" style="font-weight:400;">Aa</div>
+          <div class="weight-label">Regular</div>
+          <div class="weight-value">400</div>
+        </div>
+        <div class="weight-card">
+          <div class="weight-sample" style="font-weight:500;">Aa</div>
+          <div class="weight-label">Medium</div>
+          <div class="weight-value">500</div>
+        </div>
+        <div class="weight-card">
+          <div class="weight-sample" style="font-weight:600;">Aa</div>
+          <div class="weight-label">SemiBold</div>
+          <div class="weight-value">600</div>
+        </div>
+        <div class="weight-card">
+          <div class="weight-sample" style="font-weight:700;">Aa</div>
+          <div class="weight-label">Bold</div>
+          <div class="weight-value">700</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== USAGE ===================== -->
+    <section class="section">
+      <div class="section-title">UI Components &amp; Usage</div>
+
+      <div class="usage-grid" style="margin-bottom: 20px;">
+        <div class="usage-card">
+          <h4>Buttons</h4>
+          <div class="btn-row">
+            <a class="btn btn--primary">Primary CTA</a>
+            <a class="btn btn--outline">Outline</a>
+            <a class="btn btn--ghost">Ghost</a>
+          </div>
+          <div class="btn-row" style="margin-top: 14px;">
+            <a class="btn btn--primary btn--sm">Small Primary</a>
+            <a class="btn btn--outline btn--sm">Small Outline</a>
+          </div>
+        </div>
+        <div class="usage-card">
+          <h4>Badges &amp; Tags</h4>
+          <div class="badge-row">
+            <span class="badge badge--accent">Est. 2005</span>
+            <span class="badge badge--accent">20+ Years</span>
+            <span class="badge badge--green">Licensed</span>
+            <span class="badge badge--muted">DFW Metro</span>
+            <span class="badge badge--muted">Insured</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Do / Don't -->
+      <div style="margin-bottom: 8px; font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase;">Logo Usage — Do &amp; Don't</div>
+      <div class="do-dont">
+        <div class="do-block">
+          <h5>✓ Do</h5>
+          <ul>
+            <li>Use the Blueprint Grid icon + wordmark lockup as the primary logo</li>
+            <li>Use the white wordmark + orange "NEW CONSTRUCTION" on dark backgrounds</li>
+            <li>Use the dark wordmark + orange subline on white backgrounds</li>
+            <li>Use Barlow Condensed exclusively for the logo wordmark</li>
+            <li>Maintain minimum clear space equal to the icon height on all sides</li>
+            <li>Use Bebas Neue for all display and section headings</li>
+          </ul>
+        </div>
+        <div class="dont-block">
+          <h5>✗ Don't</h5>
+          <ul>
+            <li>Stretch, skew, or rotate the logo</li>
+            <li>Change the icon stroke or fill color to anything other than brand colors</li>
+            <li>Use the logo on busy photographic backgrounds without a dark scrim</li>
+            <li>Use Barlow Condensed for general headings — logo wordmark use only</li>
+            <li>Use Inter for display headlines — always use Bebas Neue</li>
+            <li>Use accent orange for body text</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div style="padding: 32px 0; text-align: center;">
+    <p style="font-size: 11px; color: var(--dim); letter-spacing: 1px;">SEVILLAS NEW CONSTRUCTION &nbsp;|&nbsp; BRAND GUIDELINES &nbsp;|&nbsp; CONFIDENTIAL</p>
+  </div>
+
+</body>
+</html>

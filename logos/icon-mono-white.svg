@@ -1,0 +1,8 @@
+<svg width="62" height="62" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blueprint Grid Icon — monochrome white -->
+  <rect x="2" y="4" width="58" height="58" rx="6" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+  <line x1="2" y1="33" x2="60" y2="33" stroke="#ffffff" stroke-width="1.8"/>
+  <line x1="31" y1="4" x2="31" y2="62" stroke="#ffffff" stroke-width="1.8"/>
+  <rect x="14" y="16" width="34" height="34" rx="3" fill="rgba(255,255,255,0.08)" stroke="#ffffff" stroke-width="1.2"/>
+  <circle cx="31" cy="33" r="5.5" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="220" height="136" viewBox="0 0 220 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blueprint Grid Icon — centered -->
+  <g transform="translate(79, 2)">
+    <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+    <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+    <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+    <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.10" stroke="#FF6B35" stroke-width="1.2"/>
+    <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="110" y="100" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#0d0d1a" letter-spacing="1">SEVILLAS</text>
+  <text x="110" y="124" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="18" font-weight="600" fill="#FF6B35" letter-spacing="2">NEW CONSTRUCTION</text>
+</svg>

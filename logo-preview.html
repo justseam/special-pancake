@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNC Logo Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #0d0d1a; color: #e0e0ec; -webkit-font-smoothing: antialiased; padding: 60px 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+
+    .page-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #FF6B35; margin-bottom: 8px; text-align: center; }
+    .page-title   { font-family: 'Barlow Condensed', sans-serif; font-size: 48px; font-weight: 800; color: #fff; text-align: center; margin-bottom: 56px; letter-spacing: 1px; }
+
+    .label { font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #555570; margin-bottom: 12px; }
+
+    /* ---- PRIMARY ---- */
+    .primary-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
+    .cell { display: flex; align-items: center; justify-content: center; padding: 56px 40px; }
+    .cell--dark  { background: #0d0d1a; border: 1px solid #1e1e38; }
+    .cell--card  { background: #161628; }
+    .cell--white { background: #ffffff; }
+    .cell--accent{ background: #FF6B35; }
+    .cell--black { background: #000000; }
+
+    /* ---- STACKED ---- */
+    .stacked-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
+
+    /* ---- ICON SIZES ---- */
+    .sizes-row { display: flex; align-items: flex-end; gap: 32px; padding: 40px; background: #161628; border-radius: 12px; margin-bottom: 40px; }
+    .size-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .size-item span { font-size: 9px; font-family: monospace; color: #555570; }
+
+    /* ---- ON PHOTO ---- */
+    .photo-cell {
+      display: flex; align-items: center; justify-content: center;
+      padding: 56px 40px; border-radius: 12px; margin-bottom: 40px;
+      background: linear-gradient(135deg, rgba(13,13,26,0.85) 0%, rgba(26,26,46,0.7) 100%),
+                  url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=400&fit=crop') center/cover;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <p class="page-eyebrow">Logo Preview</p>
+  <h1 class="page-title">Blueprint Grid — Sevillas New Construction</h1>
+
+  <!-- PRIMARY HORIZONTAL -->
+  <div class="label">Primary Lockup — Horizontal</div>
+  <div class="primary-row">
+
+    <!-- Dark bg -->
+    <div class="cell cell--card">
+      <svg width="320" height="68" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Blueprint grid icon -->
+        <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+        <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+        <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+        <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.2"/>
+        <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+        <!-- Wordmark -->
+        <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="0.5">SEVILLAS</text>
+        <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+      </svg>
+    </div>
+
+    <!-- White bg -->
+    <div class="cell cell--white">
+      <svg width="320" height="68" viewBox="0 0 320 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="4" width="58" height="58" rx="6" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+        <line x1="2" y1="33" x2="60" y2="33" stroke="#FF6B35" stroke-width="1.8"/>
+        <line x1="31" y1="4" x2="31" y2="62" stroke="#FF6B35" stroke-width="1.8"/>
+        <rect x="14" y="16" width="34" height="34" rx="3" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.2"/>
+        <circle cx="31" cy="33" r="5.5" fill="#FF6B35"/>
+        <text x="76" y="38" font-family="'Barlow Condensed', sans-serif" font-size="34" font-weight="800" fill="#0d0d1a" letter-spacing="0.5">SEVILLAS</text>
+        <text x="76" y="60" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- STACKED LOCKUP -->
+  <div class="label">Stacked Lockup</div>
+  <div class="stacked-row">
+
+    <div class="cell cell--card" style="flex-direction:column; gap:20px;">
+      <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+        <line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="2"/>
+        <line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="2"/>
+        <rect x="14" y="14" width="36" height="36" rx="4" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="6" fill="#FF6B35"/>
+      </svg>
+      <div style="text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:2px;line-height:1;">SEVILLAS</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:#FF6B35;letter-spacing:2px;line-height:1.4;">NEW CONSTRUCTION</div>
+      </div>
+    </div>
+
+    <div class="cell cell--white" style="flex-direction:column; gap:20px;">
+      <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+        <line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="2"/>
+        <line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="2"/>
+        <rect x="14" y="14" width="36" height="36" rx="4" fill="#FF6B35" fill-opacity="0.1" stroke="#FF6B35" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="6" fill="#FF6B35"/>
+      </svg>
+      <div style="text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#0d0d1a;letter-spacing:2px;line-height:1;">SEVILLAS</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:#FF6B35;letter-spacing:2px;line-height:1.4;">NEW CONSTRUCTION</div>
+      </div>
+    </div>
+
+    <div class="cell cell--accent" style="flex-direction:column; gap:20px;">
+      <svg width="72" height="72" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="60" height="60" rx="7" stroke="#fff" stroke-width="2.5" fill="none"/>
+        <line x1="2" y1="32" x2="62" y2="32" stroke="#fff" stroke-width="2"/>
+        <line x1="32" y1="2" x2="32" y2="62" stroke="#fff" stroke-width="2"/>
+        <rect x="14" y="14" width="36" height="36" rx="4" fill="rgba(255,255,255,0.15)" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="32" cy="32" r="6" fill="#fff"/>
+      </svg>
+      <div style="text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:2px;line-height:1;">SEVILLAS</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;color:rgba(255,255,255,0.75);letter-spacing:2px;line-height:1.4;">NEW CONSTRUCTION</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ICON ONLY SIZES -->
+  <div class="label">Icon Mark — Size Scale</div>
+  <div class="sizes-row">
+    <div class="size-item">
+      <svg width="96" height="96" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="2"/><line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="2"/><rect x="14" y="14" width="36" height="36" rx="4" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.5"/><circle cx="32" cy="32" r="6" fill="#FF6B35"/></svg>
+      <span>96px</span>
+    </div>
+    <div class="size-item">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="2"/><line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="2"/><rect x="14" y="14" width="36" height="36" rx="4" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.5"/><circle cx="32" cy="32" r="6" fill="#FF6B35"/></svg>
+      <span>64px</span>
+    </div>
+    <div class="size-item">
+      <svg width="40" height="40" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="2"/><line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="2"/><rect x="14" y="14" width="36" height="36" rx="4" fill="#FF6B35" fill-opacity="0.12" stroke="#FF6B35" stroke-width="1.5"/><circle cx="32" cy="32" r="6" fill="#FF6B35"/></svg>
+      <span>40px</span>
+    </div>
+    <div class="size-item">
+      <svg width="24" height="24" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="4" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="3"/><line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="3"/><circle cx="32" cy="32" r="8" fill="#FF6B35"/></svg>
+      <span>24px</span>
+    </div>
+    <div class="size-item">
+      <svg width="16" height="16" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#FF6B35" stroke-width="4"/><line x1="32" y1="2" x2="32" y2="62" stroke="#FF6B35" stroke-width="4"/><circle cx="32" cy="32" r="10" fill="#FF6B35"/></svg>
+      <span>16px</span>
+    </div>
+    <div class="size-item" style="margin-left:auto;">
+      <!-- Monochrome white -->
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#fff" stroke-width="2.5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#fff" stroke-width="2"/><line x1="32" y1="2" x2="32" y2="62" stroke="#fff" stroke-width="2"/><rect x="14" y="14" width="36" height="36" rx="4" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1.5"/><circle cx="32" cy="32" r="6" fill="#fff"/></svg>
+      <span>Mono White</span>
+    </div>
+    <div class="size-item">
+      <!-- Mono black -->
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="background:#fff;border-radius:6px;"><rect x="2" y="2" width="60" height="60" rx="7" stroke="#0d0d1a" stroke-width="2.5" fill="none"/><line x1="2" y1="32" x2="62" y2="32" stroke="#0d0d1a" stroke-width="2"/><line x1="32" y1="2" x2="32" y2="62" stroke="#0d0d1a" stroke-width="2"/><rect x="14" y="14" width="36" height="36" rx="4" fill="rgba(0,0,0,0.06)" stroke="#0d0d1a" stroke-width="1.5"/><circle cx="32" cy="32" r="6" fill="#0d0d1a"/></svg>
+      <span>Mono Black</span>
+    </div>
+  </div>
+
+  <!-- ON PHOTO -->
+  <div class="label">On Photography</div>
+  <div class="photo-cell">
+    <svg width="340" height="72" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="4" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+      <line x1="2" y1="34" x2="62" y2="34" stroke="#FF6B35" stroke-width="2"/>
+      <line x1="32" y1="4" x2="32" y2="64" stroke="#FF6B35" stroke-width="2"/>
+      <rect x="15" y="17" width="34" height="34" rx="4" fill="#FF6B35" fill-opacity="0.15" stroke="#FF6B35" stroke-width="1.5"/>
+      <circle cx="32" cy="34" r="5.5" fill="#FF6B35"/>
+      <text x="80" y="40" font-family="'Barlow Condensed', sans-serif" font-size="36" font-weight="800" fill="#ffffff" letter-spacing="1">SEVILLAS</text>
+      <text x="80" y="63" font-family="'Barlow Condensed', sans-serif" font-size="23" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+    </svg>
+  </div>
+
+  <!-- BLACK BG -->
+  <div class="label">On Black</div>
+  <div class="cell cell--black" style="border-radius:12px; margin-bottom:40px;">
+    <svg width="340" height="72" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="4" width="60" height="60" rx="7" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+      <line x1="2" y1="34" x2="62" y2="34" stroke="#FF6B35" stroke-width="2"/>
+      <line x1="32" y1="4" x2="32" y2="64" stroke="#FF6B35" stroke-width="2"/>
+      <rect x="15" y="17" width="34" height="34" rx="4" fill="#FF6B35" fill-opacity="0.15" stroke="#FF6B35" stroke-width="1.5"/>
+      <circle cx="32" cy="34" r="5.5" fill="#FF6B35"/>
+      <text x="80" y="40" font-family="'Barlow Condensed', sans-serif" font-size="36" font-weight="800" fill="#ffffff" letter-spacing="1">SEVILLAS</text>
+      <text x="80" y="63" font-family="'Barlow Condensed', sans-serif" font-size="23" font-weight="600" fill="#FF6B35" letter-spacing="1">NEW CONSTRUCTION</text>
+    </svg>
+  </div>
+
+  <div style="text-align:center; padding: 20px 0 0; font-size: 10px; color: #555570; letter-spacing: 3px; text-transform: uppercase;">
+    Sevillas New Construction — Blueprint Grid Logo
+  </div>
+
+</div>
+</body>
+</html>
